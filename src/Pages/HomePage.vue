@@ -38,22 +38,6 @@ export default {
       localStorage.setItem('home page value', this.name);
     },
   },
-  mutations: {
-  },
-  name: {
-    get() {
-      return this.getName;
-    },
-    set(val) {
-      return this.$store.commit("updateUserName", {
-        name: val,
-        index: this.index
-      });
-    }
-  },
-  index() {
-    // return this.$route.params.index;
-  },
 }
 </script>
 
