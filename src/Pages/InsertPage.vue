@@ -16,7 +16,7 @@
         <button class="btn-tour-finish" @click="changeValue">Save</button>
       </div>
       <div class='link-position__wrapper'>
-        <router-link to="/">Go back to home ↩ ️</router-link>
+        <router-link to="/home">Go back to home ↩ ️</router-link>
       </div>
     </div>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">

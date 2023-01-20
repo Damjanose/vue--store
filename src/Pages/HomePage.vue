@@ -16,7 +16,7 @@
         <button class="btn-tour-finish" @click="changeValue">Save</button>
       </div>
       <div class='link-position__wrapper'>
-        <router-link to="/insert">Go to insert Page ➡ ️</router-link>
+        <router-link to="/">Go to insert Page ➡ ️</router-link>
       </div>
       <p>{{name}}</p>
     </div>

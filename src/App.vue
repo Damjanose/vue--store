@@ -1,6 +1,9 @@
 <template>
   <div id="app">
-    <HomePage></HomePage>
+    <router-view>
+      <HomePage></HomePage>
+      <InsertPage></InsertPage>
+    </router-view>
   </div>
 </template>
 
@@ -34,5 +37,8 @@ body {
 }
 input:focus-visible {
   outline: none;
+}
+a {
+  cursor: pointer;
 }
 </style>
