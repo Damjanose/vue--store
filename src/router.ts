@@ -7,6 +7,7 @@ import HomePage from "@/Pages/HomePage.vue";
 Vue.use(VueRouter)
 
 export default new VueRouter({
+  mode: 'history',
   routes: [
     { path: '/', component: InsertPage },
     { path: '/home', component: HomePage },
