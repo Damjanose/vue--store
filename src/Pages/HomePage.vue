@@ -152,7 +152,6 @@ export default {
     color: #fff;
     font-size: 40px;
     font-weight: 888;
-    text-transform: uppercase;
     background: #fff;
     border-radius: 6px;
   }
