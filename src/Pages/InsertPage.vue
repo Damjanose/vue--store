@@ -49,6 +49,9 @@ export default {
 </script>
 
 <style scoped>
+  .link-position__wrapper {
+    float: right;
+  }
   a {
     color: #3f503ff2;
     text-decoration: none;
@@ -100,12 +103,5 @@ export default {
     position: absolute;
     top: 0;
     transform: rotate(180deg);;
-  }
-  .red {
-    color: red;
-    font-style: italic;
-  }
-  .green {
-    color: green;
   }
 </style>
