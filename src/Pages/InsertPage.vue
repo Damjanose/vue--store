@@ -1,12 +1,8 @@
 <template>
   <div class='form'>
-    <div class="ocean top">
-      <div class="wave"></div>
-      <div class="wave"></div>
-      <div class="wave"></div>
-    </div>
     <div class='formWrapper'>
       <p>Insert page</p>
+      <p>{{ $store.state.message }}</p>
       <div class='submitForm'>
         <input
           placeholder="Insert"
@@ -16,12 +12,12 @@
         />
         <button class="btn-tour-finish" @click="changeValue">Save</button>
       </div>
-      <div class='link-position__wrapper'>
-        <router-link to="/home">Go back to home ↩ ️</router-link>
-      </div>
       <p :class="name == null ? 'red' : 'green'">
         {{ name == null ? "Old value:" + value : "New value:" + name }}
       </p>
+    </div>
+    <div class='link-position__wrapper'>
+      <router-link to="/home">Go back to home ↩ ️</router-link>
     </div>
     <div class="ocean">
       <div class="wave"></div>
@@ -61,9 +57,13 @@ export default {
     height: 100vh;
     align-items: center;
     justify-content: center;
+    background-color: #dfd8d8;
+  }
+  .formWrapper {
+    background-color: #fefefe;
   }
   .ocean {
-    height: 200px; /* change the height of the waves here */
+    height: 100px; /* change the height of the waves here */
     width: 100%;
     position: absolute;
     bottom: 0;

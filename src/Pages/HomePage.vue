@@ -114,10 +114,10 @@ export default {
   .link-position__wrapper {
     display: flex;
     align-items: center;
+    margin-left: 162px;
   }
   .red {
     color: red;
-    font-style: italic;
   }
   .green {
     color: green;
