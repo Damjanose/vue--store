@@ -1,17 +1,21 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <router-view>
+      <HomePage></HomePage>
+      <InsertPage></InsertPage>
+    </router-view>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import HelloWorld from './components/HelloWorld.vue';
+import HomePage from './Pages/HomePage.vue';
+import InsertPage from './Pages/InsertPage.vue';
 
 @Component({
   components: {
-    HelloWorld,
+    HomePage,
+    InsertPage,
   },
 })
 export default class App extends Vue {}
@@ -24,6 +28,17 @@ export default class App extends Vue {}
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+input:focus-visible {
+  outline: none;
+}
+a {
+  cursor: pointer;
 }
 </style>
